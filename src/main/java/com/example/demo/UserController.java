@@ -1,19 +1,19 @@
 package com.example.demo;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class Controller{
+@Controller
+public class UserController {
     private UserRepository userRepository;
 
     public void UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    public Controller(UserRepository userRepository) {
+    public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
