@@ -20,7 +20,8 @@ public class Controller{
     @GetMapping("/users")
     public String getUsers(Model model) {
         model.addAttribute("users", userRepository.findAll());
-        return userRepository.findAll().toString();
+       // return userRepository.findAll().toString();
+        return "users";
     }
 
     @PostMapping("/users")
